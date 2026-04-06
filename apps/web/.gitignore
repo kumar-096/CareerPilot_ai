@@ -1,11 +1,18 @@
 # =========================
-# Node / React
+# Temp / cache
+# =========================
+temp/
+.cache/
+
+# =========================
+# Node / Next.js
 # =========================
 node_modules/
+.next/
 dist/
 build/
-.next/
 coverage/
+*.tsbuildinfo
 
 # =========================
 # Python / FastAPI
@@ -26,7 +33,7 @@ venv/
 logs/
 
 # =========================
-# OS / IDE
+# IDE / OS
 # =========================
 .vscode/
 .idea/
