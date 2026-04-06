@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routers import resume
 from app.core.config import settings
-
+from apps.api.routers.readiness import router as readiness_router
 app = FastAPI(title=settings.PROJECT_NAME)
 
 app.add_middleware(
@@ -24,7 +24,11 @@ app.include_router(
     prefix=f"{settings.API_V1_STR}/resume",
     tags=["resume"]
 )
-
+app.include_router(
+    readiness_router,
+    prefix="/readiness",
+    tags=["Readiness"]
+)
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
