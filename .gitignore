@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -137,3 +138,40 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+=======
+# dependencies
+node_modules/
+.pnpm-store/
+
+# next
+.next/
+out/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# env
+.env
+.env.local
+
+# logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# build
+dist/
+coverage/
+
+# turbo
+.turbo/
+>>>>>>> b75cb06 (feat: vertical slice 1 backend ats scoring stable and calibrated)
