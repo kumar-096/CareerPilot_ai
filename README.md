@@ -2,8 +2,8 @@
 AI-powered student-to-offer intelligence platform for placement readiness, interview analytics, and recruiter trust verification.
 <div align="center">
 
-# CareerPilot_ai
-AI-powered student-to-offer intelligence platform for placement readiness, interview analytics, and recruiter trust verification.
+# 🚀 CareerPilot AI
+### Student-to-Offer Intelligence & Opportunity Trust Platform
 
 **A production-grade AI-powered platform that transforms resume data, interview performance, and recruiter trust signals into actionable placement readiness intelligence.**
 
