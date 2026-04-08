@@ -1,8 +1,8 @@
 {
-  "applied": 31,
+  "applied": 37,
   "oa_cleared": 10,
-  "interviews": 4,
-  "offers": 2,
+  "interviews": 5,
+  "offers": 3,
   "companies": [
     {
       "id": "1",
@@ -34,6 +34,54 @@
       "role": "UI Engineer",
       "current_stage": "Interview",
       "last_updated": "4h ago",
+      "result": "Pending"
+    },
+    {
+      "id": "fe9b030b-7758-497b-957b-6828db79d796",
+      "company": "Amazon",
+      "role": "SDE Intern",
+      "current_stage": "Offer",
+      "last_updated": "Just now",
+      "result": "Secured"
+    },
+    {
+      "id": "8ddd9a35-5564-449c-8ded-53e909a4a2b0",
+      "company": "Google",
+      "role": "ML Intern",
+      "current_stage": "Applied",
+      "last_updated": "Just now",
+      "result": "Pending"
+    },
+    {
+      "id": "509c939f-fd98-4d87-8b14-4f16d2b69eb5",
+      "company": "Netflix",
+      "role": "Backend Intern",
+      "current_stage": "Applied",
+      "last_updated": "Just now",
+      "result": "Pending"
+    },
+    {
+      "id": "36f11730-2e7d-47e3-812f-c9d8581e3759",
+      "company": "Meta",
+      "role": "AI Engineer Intern",
+      "current_stage": "Applied",
+      "last_updated": "Just now",
+      "result": "Pending"
+    },
+    {
+      "id": "1fdaf4a0-483e-4979-9067-6a15e7f20fdb",
+      "company": "NVIDIA",
+      "role": "AI Intern",
+      "current_stage": "Applied",
+      "last_updated": "Just now",
+      "result": "Pending"
+    },
+    {
+      "id": "015cd1c1-e841-4319-8b81-f7f2890fbfc8",
+      "company": "NVIDIA",
+      "role": "AI Intern",
+      "current_stage": "Applied",
+      "last_updated": "Just now",
       "result": "Pending"
     }
   ]

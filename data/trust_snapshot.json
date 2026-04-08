@@ -1,0 +1,11 @@
+{
+  "trust_score": 75,
+  "risk_level": "Medium Risk",
+  "recruiter_email": "fakehr@gmail.com",
+  "job_url": "http://bit.ly/scamjob",
+  "suspicious_flags": [
+    "Free email provider utilized"
+  ],
+  "salary_anomaly": false,
+  "checked_at": "2026-04-08T13:14:17.828886Z"
+}

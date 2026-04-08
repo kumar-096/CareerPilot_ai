@@ -1,0 +1,24 @@
+[
+  {
+    "session_id": "1489c0af-c2c9-40cb-9219-bf8ce86f132f",
+    "interview_type": "string",
+    "transcript": "string",
+    "confidence_score": 0,
+    "weakness_heatmap": [
+      "Communication"
+    ],
+    "filler_count": 0,
+    "created_at": "2026-04-08T12:34:36.345637Z"
+  },
+  {
+    "session_id": "7e9b0ba0-77a2-427f-a866-8841f8c120e9",
+    "interview_type": "HR",
+    "transcript": "I built CareerPilot AI using React FastAPI and local AI pipelines",
+    "confidence_score": 82,
+    "weakness_heatmap": [
+      "Communication"
+    ],
+    "filler_count": 0,
+    "created_at": "2026-04-08T13:11:17.670155Z"
+  }
+]

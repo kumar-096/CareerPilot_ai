@@ -1,10 +1,12 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
 from packages.schemas.readiness import ReadinessRequest, ReadinessResponse
 from services.readiness.scorer import calculate_readiness
 from services.roadmap.generator import generate_roadmap
 from packages.schemas.readiness_snapshot import ReadinessSnapshot
-from services.readiness import readiness_store
 from datetime import datetime
+from packages.schemas.activity_event import ActivityEvent
+import uuid
+from packages.repositories.base import ReadinessRepository, get_readiness_repo, ActivityEventRepository, get_activity_repo
 
 router = APIRouter()
 
@@ -31,12 +33,16 @@ async def analyze_readiness(request: ReadinessRequest):
     )
 
 @router.get("/snapshot", response_model=ReadinessSnapshot)
-async def get_readiness_snapshot() -> ReadinessSnapshot:
+async def get_readiness_snapshot(repo: ReadinessRepository = Depends(get_readiness_repo)) -> ReadinessSnapshot:
     """Read specific latest snapshot data state securely enforcing boundaries."""
-    return readiness_store.load_readiness_snapshot()
+    return repo.load()
 
 @router.post("/evaluate", response_model=ReadinessSnapshot)
-async def evaluate_and_persist(request: ReadinessRequest) -> ReadinessSnapshot:
+async def evaluate_and_persist(
+    request: ReadinessRequest, 
+    repo: ReadinessRepository = Depends(get_readiness_repo),
+    activity_repo: ActivityEventRepository = Depends(get_activity_repo)
+) -> ReadinessSnapshot:
     """Accept inputs strictly validating and updating standard data sources persisting deterministically locally."""
     scoring_result = calculate_readiness(
         cgpa=request.cgpa,
@@ -54,5 +60,15 @@ async def evaluate_and_persist(request: ReadinessRequest) -> ReadinessSnapshot:
         updated_at=datetime.utcnow().isoformat() + "Z"
     )
     
-    readiness_store.save_readiness_snapshot(snapshot)
+    repo.save(snapshot)
+    
+    activity_repo.append(ActivityEvent(
+        event_id=str(uuid.uuid4()),
+        event_type="readiness_evaluated",
+        domain="readiness",
+        entity_id=request.target_role,
+        timestamp=snapshot.updated_at,
+        payload={"score": snapshot.readiness_score, "level": snapshot.level}
+    ))
+    
     return snapshot

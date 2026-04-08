@@ -1,0 +1,40 @@
+-- init_schema.sql
+-- Create schemas mapping identical JSON shapes mapped to JSONB natively seamlessly.
+
+CREATE TABLE IF NOT EXISTS readiness_snapshots (
+    id SERIAL PRIMARY KEY,
+    snapshot JSONB NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS trust_snapshots (
+    id SERIAL PRIMARY KEY,
+    snapshot JSONB NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS interview_sessions (
+    id SERIAL PRIMARY KEY,
+    session_id UUID UNIQUE NOT NULL,
+    snapshot JSONB NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS progress_snapshots (
+    id SERIAL PRIMARY KEY,
+    snapshot JSONB NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS roadmap_snapshots (
+    id SERIAL PRIMARY KEY,
+    snapshot JSONB NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS activity_events (
+    id SERIAL PRIMARY KEY,
+    event_id UUID UNIQUE NOT NULL,
+    snapshot JSONB NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,17 +1,15 @@
 {
-  "readiness_score": 40,
-  "level": "low",
-  "target_role": "string",
+  "readiness_score": 76,
+  "level": "medium",
+  "target_role": "ML Engineer",
   "missing_skills": [
-    "dsa",
-    "oops",
-    "dbms",
-    "os",
-    "system design"
+    "machine learning",
+    "deep learning",
+    "statistics",
+    "data structues"
   ],
   "weak_zones": [
-    "Low DSA",
-    "Missing SDE Core Skills"
+    "Missing AIML Core Skills"
   ],
-  "updated_at": "2026-04-08T11:59:54.790805Z"
+  "updated_at": "2026-04-08T13:08:37.969734Z"
 }

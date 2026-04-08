@@ -1,0 +1,101 @@
+[
+  {
+    "event_id": "1df21c4f-8047-4c9d-a47c-a4426e2b4d98",
+    "event_type": "readiness_evaluated",
+    "domain": "readiness",
+    "entity_id": "string",
+    "timestamp": "2026-04-08T13:06:54.140344Z",
+    "payload": {
+      "score": 40,
+      "level": "low"
+    }
+  },
+  {
+    "event_id": "04df25c7-64bb-4226-a451-820830f46e85",
+    "event_type": "readiness_evaluated",
+    "domain": "readiness",
+    "entity_id": "ML Engineer",
+    "timestamp": "2026-04-08T13:08:37.969734Z",
+    "payload": {
+      "score": 76,
+      "level": "medium"
+    }
+  },
+  {
+    "event_id": "f9213cb7-2950-4f20-aa1f-0d6bb816e7c5",
+    "event_type": "trust_verified",
+    "domain": "trust",
+    "entity_id": "fakehr@gmail.com",
+    "timestamp": "2026-04-08T13:09:15.807609Z",
+    "payload": {
+      "risk_level": "Medium Risk",
+      "score": 75
+    }
+  },
+  {
+    "event_id": "7ae9ff32-60b2-485c-8b4b-5bee78d6c4dd",
+    "event_type": "task_completed",
+    "domain": "roadmap",
+    "entity_id": "dsa_day_4",
+    "timestamp": "2026-04-08T13:10:32.946702Z",
+    "payload": {
+      "sprint": "ML Core Sprint",
+      "task": "dsa_day_4"
+    }
+  },
+  {
+    "event_id": "4445bd03-7d43-467b-a766-691b498b400d",
+    "event_type": "interview_created",
+    "domain": "interview",
+    "entity_id": "7e9b0ba0-77a2-427f-a866-8841f8c120e9",
+    "timestamp": "2026-04-08T13:11:17.670155Z",
+    "payload": {
+      "type": "HR",
+      "confidence": 82
+    }
+  },
+  {
+    "event_id": "9b6dcf69-5afe-4f1c-8561-183fbb005fa1",
+    "event_type": "trust_verified",
+    "domain": "trust",
+    "entity_id": "fakehr@gmail.com",
+    "timestamp": "2026-04-08T13:14:17.828886Z",
+    "payload": {
+      "risk_level": "Medium Risk",
+      "score": 75
+    }
+  },
+  {
+    "event_id": "8cfd62f1-fb07-42ab-912b-76c6bd4ed132",
+    "event_type": "application_created",
+    "domain": "progress",
+    "entity_id": "36f11730-2e7d-47e3-812f-c9d8581e3759",
+    "timestamp": "2026-04-08T13:27:33.838095Z",
+    "payload": {
+      "company": "Meta",
+      "role": "AI Engineer Intern"
+    }
+  },
+  {
+    "event_id": "dde9a88d-9679-43e3-a0e2-a395750660d7",
+    "event_type": "application_created",
+    "domain": "progress",
+    "entity_id": "1fdaf4a0-483e-4979-9067-6a15e7f20fdb",
+    "timestamp": "2026-04-08T13:42:18.123670Z",
+    "payload": {
+      "company": "NVIDIA",
+      "role": "AI Intern"
+    }
+  },
+  {
+    "event_id": "7ef970df-4db7-424c-a801-6f5841790a16",
+    "event_type": "application_created",
+    "domain": "progress",
+    "entity_id": "015cd1c1-e841-4319-8b81-f7f2890fbfc8",
+    "timestamp": "2026-04-08T14:12:31.751016Z",
+    "payload": {
+      "company": "NVIDIA",
+      "role": "AI Intern"
+    }
+  }
+]
