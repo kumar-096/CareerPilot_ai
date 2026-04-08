@@ -23,3 +23,11 @@ export interface ProgressInsight {
   description: string;
   type: 'success' | 'warning' | 'info';
 }
+
+export interface ProgressSnapshot {
+  applied: number;
+  oa_cleared: number;
+  interviews: number;
+  offers: number;
+  companies: CompanyApplication[];
+}

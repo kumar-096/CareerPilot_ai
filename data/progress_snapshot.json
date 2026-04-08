@@ -1,0 +1,40 @@
+{
+  "applied": 31,
+  "oa_cleared": 10,
+  "interviews": 4,
+  "offers": 2,
+  "companies": [
+    {
+      "id": "1",
+      "company": "Autodesk",
+      "role": "Software Engineer",
+      "current_stage": "OA",
+      "last_updated": "1d ago",
+      "result": "Pending"
+    },
+    {
+      "id": "2",
+      "company": "Amazon",
+      "role": "Frontend Engineer",
+      "current_stage": "Offer",
+      "last_updated": "1w ago",
+      "result": "Secured"
+    },
+    {
+      "id": "3",
+      "company": "Atlassian",
+      "role": "Software Engineer",
+      "current_stage": "Applied",
+      "last_updated": "2d ago",
+      "result": "Pending"
+    },
+    {
+      "id": "4",
+      "company": "ServiceNow",
+      "role": "UI Engineer",
+      "current_stage": "Interview",
+      "last_updated": "4h ago",
+      "result": "Pending"
+    }
+  ]
+}

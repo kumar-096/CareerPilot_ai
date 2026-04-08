@@ -1,0 +1,17 @@
+{
+  "readiness_score": 40,
+  "level": "low",
+  "target_role": "string",
+  "missing_skills": [
+    "dsa",
+    "oops",
+    "dbms",
+    "os",
+    "system design"
+  ],
+  "weak_zones": [
+    "Low DSA",
+    "Missing SDE Core Skills"
+  ],
+  "updated_at": "2026-04-08T11:59:54.790805Z"
+}

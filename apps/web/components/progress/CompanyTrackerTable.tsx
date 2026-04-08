@@ -1,14 +1,11 @@
 import React from 'react';
 import { CompanyApplication } from '../../types/progress';
 
-export default function CompanyTrackerTable() {
-  const applications: CompanyApplication[] = [
-    { id: '1', company: 'Amazon', role: 'Frontend Engineer', current_stage: 'Offer', last_updated: '2023-11-10', result: 'Secured' },
-    { id: '2', company: 'ServiceNow', role: 'UI Engineer', current_stage: 'Interview', last_updated: '2023-11-15', result: 'Pending' },
-    { id: '3', company: 'Autodesk', role: 'SDE I', current_stage: 'OA', last_updated: '2023-11-16', result: 'Pending' },
-    { id: '4', company: 'Atlassian', role: 'Software Engineer', current_stage: 'Applied', last_updated: '2023-11-18', result: 'Pending' },
-    { id: '5', company: 'Google', role: 'Software Engineer', current_stage: 'Rejected', last_updated: '2023-11-01', result: 'Failed' },
-  ];
+interface Props {
+  applications: CompanyApplication[];
+}
+
+export default function CompanyTrackerTable({ applications }: Props) {
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden h-full">

@@ -1,19 +1,18 @@
 import React from 'react';
-import { FunnelStats } from '../../types/progress';
 
-const stats: FunnelStats = {
-  applied: 24,
-  oaCleared: 10,
-  interviews: 4,
-  offers: 1
-};
+interface Props {
+  applied: number;
+  oaCleared: number;
+  interviews: number;
+  offers: number;
+}
 
-export default function ApplicationFunnel() {
+export default function ApplicationFunnel({ applied, oaCleared, interviews, offers }: Props) {
   const funnelStages = [
-    { label: 'Applied', value: stats.applied, color: 'from-blue-500 to-indigo-500' },
-    { label: 'OA Cleared', value: stats.oaCleared, color: 'from-indigo-500 to-purple-500' },
-    { label: 'Interviews', value: stats.interviews, color: 'from-purple-500 to-fuchsia-500' },
-    { label: 'Offers', value: stats.offers, color: 'from-emerald-400 to-teal-500' }
+    { label: 'Applied', value: applied, color: 'from-blue-500 to-indigo-500' },
+    { label: 'OA Cleared', value: oaCleared, color: 'from-indigo-500 to-purple-500' },
+    { label: 'Interviews', value: interviews, color: 'from-purple-500 to-fuchsia-500' },
+    { label: 'Offers', value: offers, color: 'from-emerald-400 to-teal-500' }
   ];
 
   return (

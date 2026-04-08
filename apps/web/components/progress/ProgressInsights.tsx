@@ -1,14 +1,11 @@
 import React from 'react';
 import { ProgressInsight } from '../../types/progress';
 
-export default function ProgressInsights() {
-  const insights: ProgressInsight[] = [
-    { title: 'Shortlist Conversion', value: '41.6%', trend: '+12% from last wk', description: 'Applied to OA ratio', type: 'info' },
-    { title: 'OA Success Rate', value: '40.0%', trend: 'Above avg', description: 'OA to Interview ratio', type: 'success' },
-    { title: 'Interview Success', value: '25.0%', description: 'Interview to Offer ratio', type: 'warning' },
-    { title: 'Strongest Category', value: 'Frontend', description: 'Based on OA pass rates', type: 'success' },
-    { title: 'Funnel Weakness', value: 'System Design', description: 'Failed in 2 past interviews', type: 'warning' },
-  ];
+interface Props {
+  insights: ProgressInsight[];
+}
+
+export default function ProgressInsights({ insights }: Props) {
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex-1 h-full">

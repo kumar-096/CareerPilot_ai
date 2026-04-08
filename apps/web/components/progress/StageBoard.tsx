@@ -1,16 +1,12 @@
 import React from 'react';
 import { CompanyApplication, ApplicationStage } from '../../types/progress';
 
-export default function StageBoard() {
+interface Props {
+  applications: CompanyApplication[];
+}
+
+export default function StageBoard({ applications }: Props) {
   const stages: ApplicationStage[] = ['Applied', 'OA', 'Interview', 'Offer', 'Rejected'];
-  
-  const applications: CompanyApplication[] = [
-    { id: '1', company: 'Atlassian', role: 'Software Engineer', current_stage: 'Applied', last_updated: '2d ago' },
-    { id: '2', company: 'Autodesk', role: 'SDE I', current_stage: 'OA', last_updated: '1d ago' },
-    { id: '3', company: 'ServiceNow', role: 'UI Engineer', current_stage: 'Interview', last_updated: '4h ago' },
-    { id: '4', company: 'Amazon', role: 'Frontend Engineer', current_stage: 'Offer', last_updated: '1w ago' },
-    { id: '5', company: 'Google', role: 'Software Engineer', current_stage: 'Rejected', last_updated: '2w ago' },
-  ];
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 overflow-hidden">
