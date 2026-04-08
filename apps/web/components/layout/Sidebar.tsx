@@ -11,10 +11,10 @@ export default function Sidebar() {
     { name: 'Dashboard', href: '/dashboard', icon: HomeIcon },
     { name: 'Resume Analyzer', href: '/resume', icon: DocumentIcon },
     { name: 'Placement Readiness', href: '/readiness', icon: ChartIcon },
-    { name: 'Progress Tracker', href: '#progress', icon: TrendingUpIcon },
-    { name: 'Mock Interviews', href: '#interviews', icon: VideoIcon },
-    { name: 'Opportunity Trust', href: '#trust', icon: ShieldIcon },
-    { name: 'Roadmaps', href: '#roadmaps', icon: MapIcon },
+    { name: 'Progress Tracker', href: '/progress', icon: TrendingUpIcon },
+    { name: 'Mock Interviews', href: '/interviews', icon: VideoIcon },
+    { name: 'Opportunity Trust', href: '/trust', icon: ShieldIcon },
+    { name: 'Roadmaps', href: '/roadmaps', icon: MapIcon },
   ];
 
   return (
@@ -33,7 +33,7 @@ export default function Sidebar() {
             <Link
               key={item.name}
               href={item.href}
-              className={`flex items-center space-x-3 px-3 py-2.5 rounded-xl transition-all duration-200 group ${
+              className={`flex items-center space-x-3 px-3 py-2.5 rounded-xl transition-all duration-200 group cursor-pointer ${
                 isActive 
                   ? 'bg-sky-500/10 text-sky-400 ring-1 ring-sky-500/20 shadow-sm shadow-sky-900/20' 
                   : 'hover:bg-slate-800 hover:text-white'

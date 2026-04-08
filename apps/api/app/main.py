@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.routers import resume
 from app.core.config import settings
 from apps.api.routers.readiness import router as readiness_router
+from app.api.routers import dashboard
 
 app = FastAPI(title=settings.PROJECT_NAME)
 
@@ -29,6 +30,12 @@ app.include_router(
     readiness_router,
     prefix=f"{settings.API_V1_STR}/readiness",
     tags=["readiness"]
+)
+
+app.include_router(
+    dashboard.router,
+    prefix=f"{settings.API_V1_STR}/dashboard",
+    tags=["dashboard"]
 )
 
 @app.get("/health")

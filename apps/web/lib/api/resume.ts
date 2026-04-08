@@ -1,6 +1,6 @@
 import { ATSResponse } from '../../types/resume';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8001';
 
 export async function uploadResume(file: File): Promise<ATSResponse> {
   const formData = new FormData();
