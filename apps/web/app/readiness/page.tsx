@@ -48,7 +48,7 @@ export default function ReadinessPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] py-16 px-4 sm:px-6 lg:px-8 font-sans selection:bg-indigo-200 selection:text-indigo-900">
+    <div className="min-h-full py-8 sm:py-12 px-4 sm:px-6 lg:px-8 font-sans selection:bg-indigo-200 selection:text-indigo-900">
       <div className="max-w-5xl mx-auto space-y-10">
         
         {/* Header */}

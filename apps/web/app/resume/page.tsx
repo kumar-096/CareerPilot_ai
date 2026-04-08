@@ -28,7 +28,7 @@ export default function ResumePage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] py-16 px-4 sm:px-6 lg:px-8 font-sans selection:bg-sky-200 selection:text-sky-900">
+    <div className="min-h-full py-8 sm:py-12 px-4 sm:px-6 lg:px-8 font-sans selection:bg-sky-200 selection:text-sky-900">
       <div className="max-w-4xl mx-auto space-y-10">
         
         {/* Header */}
